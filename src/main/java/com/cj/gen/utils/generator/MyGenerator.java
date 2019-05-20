@@ -159,7 +159,7 @@ public class MyGenerator implements CommentGenerator {
         }
         if (keyName.indexOf(field.getName().toLowerCase())!=-1){
 
-            field.addAnnotation("@TableId(type = IdType.NONE)");
+            field.addAnnotation("@TableId(type = IdType.AUTO)");
         }
 
         field.addJavaDocLine("/**");
