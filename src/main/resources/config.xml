@@ -26,7 +26,7 @@
 
 		<!-- 数据库连接的信息 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-						connectionURL="jdbc:mysql://118.123.16.211:3306/hrxj?useSSL=true"
+						connectionURL="jdbc:mysql://59.110.164.54:63306/ujiev2?useSSL=true"
 						userId="root" password="rootpass" >
 			<!--针对mysql数据库,读取表注释-->
 			<property name="useInformationSchema" value="true"></property>
@@ -47,12 +47,12 @@
 		</javaModelGenerator>
 
 		<!-- 生成xml映射文件的包名和位置 -->
-		<sqlMapGenerator targetPackage="com.cj.core.mapper" targetProject="D:\JAVA\src\resources" >
+		<sqlMapGenerator targetPackage="com.cj.suser.mapper" targetProject="D:\JAVA\src\resources" >
 			<property name="enableSubPackages" value="true"/>
 		</sqlMapGenerator>
 
 		<!-- 生成mapper 接口的包名和位置 -->
-		<javaClientGenerator targetPackage="com.cj.core.mapper" targetProject="D:\JAVA\src\java" type="XMLMAPPER" >
+		<javaClientGenerator targetPackage="com.cj.suser.mapper" targetProject="D:\JAVA\src\java" type="XMLMAPPER" >
 			<property name="enableSubPackages" value="true"/>
 		</javaClientGenerator>
 
@@ -106,6 +106,23 @@
 		<!--<table tableName="urine_proposal" domainObjectName="UrineProposal" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="blood_creatinine" domainObjectName="BloodCreatinine" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 
+		<!--<table tableName="v2_good" domainObjectName="V2Good" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+		<!--<table tableName="v2_order" domainObjectName="V2Order" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+		<!--<table tableName="v2_ratio" domainObjectName="V2Ratio" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+		<!--<table tableName="v2_give" domainObjectName="V2Give" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+
+		<!--<table tableName="v2_team" domainObjectName="V2Team" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+		<!--<table tableName="v2_team_person" domainObjectName="V2TeamPerson" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+		<!--<table tableName="v2_group_conversation" domainObjectName="V2GroupConversation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+
+		<!--<table tableName="v2_location" domainObjectName="V2Location" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+		<!--<table tableName="v2_heart_rate" domainObjectName="V2HeartRate" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+		<!--<table tableName="v2_blood_oxygen" domainObjectName="V2BloodOxygen" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+
+		<table tableName="v2_user_friend" domainObjectName="V2UserFriend" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+
+
+
 		<!--华日巡检-->
 		<!--<table tableName="admin" domainObjectName="Admin" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="admin_info" domainObjectName="AdminInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
@@ -113,7 +130,7 @@
 		<!--<table tableName="auth_modular" domainObjectName="AuthModular" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="auth_role" domainObjectName="AuthRole" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="check_item" domainObjectName="CheckItem" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
-		<table tableName="declare" domainObjectName="Declare" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+		<!--<table tableName="declare" domainObjectName="Declare" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="department" domainObjectName="Department" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="device" domainObjectName="Device" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="item_number" domainObjectName="ItemNumber" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
@@ -136,6 +153,10 @@
 		<!--<table tableName="site_nature" domainObjectName="SiteNature" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="site_type" domainObjectName="SiteType" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 		<!--<table tableName="site_usage_state" domainObjectName="SiteUsageState" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+
+
+		<!--仓库-->
+		<!--<table tableName="template" domainObjectName="Template" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 
 	</context>
 </generatorConfiguration>
